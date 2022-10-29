@@ -1,9 +1,9 @@
 import re
 
 
-def text(text, search):
+def text(text, search_symbol):
     try:
-        r = re.findall(f"{search}",text)
+        r = re.findall(f"{search_symbol}",text)
         print(len(r))
     except Exception as e:
         print(f"Error {e}")
